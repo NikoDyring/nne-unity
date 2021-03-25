@@ -22,6 +22,7 @@ public class PlayerMovement : NetworkBehaviour
         {
             GetComponentInChildren<Camera>().enabled = false;
             GetComponentInChildren<MouseLook>().enabled = false;
+            GetComponentInChildren<AudioListener>().enabled = false;
             return;
         }
 

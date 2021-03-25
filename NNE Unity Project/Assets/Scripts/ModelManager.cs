@@ -9,7 +9,6 @@ public class ModelManager : MonoBehaviour
     {
         Instance = this;
     }
-
     public void AlignModel(Transform wallQR, Transform ghostQR)
     {
         AlignedModel.rotation = wallQR.rotation;

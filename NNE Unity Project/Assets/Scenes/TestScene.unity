@@ -517,7 +517,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 344313757}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e247875bf1ee1b94698bb8c382c87be6, type: 3}
+  m_Script: {fileID: 11500000, guid: fa6c119ecce2d5b459dc47fabd6277a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ghostQR: {fileID: 803962982}
@@ -536,7 +536,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 357279128}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e247875bf1ee1b94698bb8c382c87be6, type: 3}
+  m_Script: {fileID: 11500000, guid: fa6c119ecce2d5b459dc47fabd6277a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ghostQR: {fileID: 1481808542}
@@ -633,12 +633,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 388876601}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &413592645 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1116463048334614010, guid: 2a764a722e224a3408c5cd7c4aa9e4a5,
-    type: 3}
-  m_PrefabInstance: {fileID: 803962981}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &551126863
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,6 +1006,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 873693282}
+  - component: {fileID: 873693284}
+  - component: {fileID: 873693283}
   m_Layer: 0
   m_Name: ModelToAlign
   m_TagString: Untagged
@@ -1036,6 +1032,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &873693283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873693281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  clientAuthority: 1
+  localPositionSensitivity: 0.01
+  localRotationSensitivity: 0.01
+  localScaleSensitivity: 0.01
+--- !u!114 &873693284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873693281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 1648404056
+  serverOnly: 0
+  visible: 0
+  m_AssetId: 
+  hasSpawned: 0
 --- !u!1 &895364932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,7 +1342,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1047931651}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e247875bf1ee1b94698bb8c382c87be6, type: 3}
+  m_Script: {fileID: 11500000, guid: fa6c119ecce2d5b459dc47fabd6277a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ghostQR: {fileID: 1515616960}
@@ -1422,7 +1453,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1389907742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e247875bf1ee1b94698bb8c382c87be6, type: 3}
+  m_Script: {fileID: 11500000, guid: fa6c119ecce2d5b459dc47fabd6277a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ghostQR: {fileID: 870267935}
@@ -1471,8 +1502,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataCubes:
   - {fileID: 1878697843}
-  - {fileID: 1045132318}
   - {fileID: 2135045324}
+  - {fileID: 1045132318}
   - {fileID: 895364936}
 --- !u!1001 &1481808541
 PrefabInstance:
@@ -1597,11 +1628,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae5f7bd680873f40bd735e118913142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WallQR: {fileID: 344313757}
-  GhostQR: {fileID: 413592645}
-  ModelToAlign: {fileID: 873693281}
-  WallQRCodes: []
-  GhostQRCodes: []
   AlignedModel: {fileID: 873693282}
 --- !u!1 &1499100855
 GameObject:

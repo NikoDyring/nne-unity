@@ -21,10 +21,5 @@ public class DataManager : MonoBehaviour
             dataCubes[i - 1].LastEdit = row[4];
             dataCubes[i - 1].DetailedDescription = row[5];
         }
-
-        foreach (DataCube dataCube in dataCubes)
-        {
-            Debug.Log(dataCube.name);
-        }
     }
 }

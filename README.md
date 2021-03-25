@@ -14,6 +14,7 @@ By Nikolaj Dyring Jensen
 2. After spending a lot of time trying to figure out how to get the alignment right I spend a lot of time hard-coding it in the beginning to later on change it after I got a better understanding of Quarternions.
 
 ## Other Comments
-The prototype I've handed in is missing the syncronization between two clients when they click a QR code. It works if you're the server/host, but not if the clients sends the request. I will be looking into this issue until we speak next time.
+The prototype I've handed in is missing the syncronization between two clients when they click a QR code. It works if you're the server/host, but not if the clients sends the request.
+I believe the last thing is just an issue of me not setting up Mirror to handle a Command from a client the way it should be. I will be looking into this issue until we speak next time.
 
 I spend a lot of time reading through documentation as the previous experience I've had with Unity has mainly been 2D projects. This was quite the challenge, but none the less I am confident that this type of work is something that'd challenge and motivate me to work even harder. Overall, it has been a very insightful challenge, and I especially liked the complexity of it as some of the functionality I've never touched upon (synchronizing gameObjects between clients in a 3D World space)

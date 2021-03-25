@@ -7,14 +7,10 @@ public class MouseLook : MonoBehaviour
     [SerializeField] float mouseSensitivity = 100f;
     [SerializeField] Transform playerBody;
     RaycastHit hit;
-    DisplayDataCube dataCubeUI;
     DataCube dataCube;
 
     float xRotation = 0f;
 
-    void Awake() {
-        dataCubeUI = FindObjectOfType<DisplayDataCube>();
-    }
 
     void Start()
     {
@@ -47,7 +43,7 @@ public class MouseLook : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 3f))
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 6f))
             {
                 if (hit.collider.tag == "DataCube")
                 {

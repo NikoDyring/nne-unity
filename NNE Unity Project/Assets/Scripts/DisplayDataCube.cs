@@ -12,8 +12,6 @@ public class DisplayDataCube : MonoBehaviour
     [SerializeField] TextMeshProUGUI lastEditText;
     [SerializeField] TextMeshProUGUI detailedDescriptionText;
 
-    DataCube data;
-
     // Simple singleton
     public static DisplayDataCube Instance;
 

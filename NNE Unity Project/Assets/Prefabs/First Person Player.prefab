@@ -314,6 +314,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 100
   playerBody: {fileID: 860967158591886422}
+  displayDataCubeUI: {fileID: 1452102656102122297, guid: 16ef4eee89a43044ea1c13f226b65101,
+    type: 3}
 --- !u!1 &5741683786867974784
 GameObject:
   m_ObjectHideFlags: 0

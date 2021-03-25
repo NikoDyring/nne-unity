@@ -6,7 +6,6 @@ public class PlayerMovement : NetworkBehaviour
 {
     [SerializeField] float speed = 12f;
     CharacterController controller;
-    RaycastHit hit;
 
     void Awake()
     {
@@ -22,22 +21,8 @@ public class PlayerMovement : NetworkBehaviour
         if(!isLocalPlayer)
         {
             GetComponentInChildren<Camera>().enabled = false;
+            GetComponentInChildren<MouseLook>().enabled = false;
             return;
-        }
-
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            
-            if(Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 3f))
-            {
-                Debug.Log("I hit: " + hit.collider.gameObject);
-                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow, 2f);
-            }
-            else
-            {
-                Debug.Log("I missed");
-                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.red, 2f);
-            }
         }
 
         float x = Input.GetAxis("Horizontal");
